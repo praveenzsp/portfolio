@@ -1,0 +1,342 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;500&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+
+body{
+    background-image: url('ironman1.jpg');
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.wholecontainer{
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: -50px;
+    background-color: transparent;
+}
+
+
+.mainheading{
+    font-family:'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
+    color: white;
+    margin-top: 200px;
+}
+
+.container1{
+    /* display: inline;
+    float: right; */
+    background-color: transparent;
+}
+
+.about{
+    background-color: transparent;
+    width: 50%;
+    height: 300px;
+}
+
+.about p{
+    padding-bottom: 30px;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.gif1 img{
+    opacity: 1.0;
+    position: absolute;
+    top: 100px;
+    right: 120px;
+    width: 500px;
+    height: 300px;
+    z-index: -10;
+}
+
+
+.container2{
+    width: 100%;
+    border: 3px solid transparent;
+    
+}
+ .container2 h1{
+     color: white;
+     padding-bottom: 20px;
+     text-align: center;
+ }
+
+
+.skills p{
+    color: white;
+    padding-bottom: 20px;
+    text-decoration:none;
+    font-size: large;
+    text-align: right;
+}
+
+.skills p:hover{
+    text-decoration: underline solid turquoise;
+
+}
+
+.projects-heading{
+    color: white;
+    font-weight: 400;
+}
+
+.container2{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.container3{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.whole-project-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.individual-project-container{
+    background-color: rgba(138, 153, 153, 0.199);
+    width: 440px;
+    height: 340px;
+    border-radius: 25px;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+.individual-project-container h1{
+    margin-left: 20px;
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 25px;
+    color: white;
+}
+
+.individual-project-container h2{
+    margin-left: 20px;
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+}
+
+.individual-project-container p{
+    font-size: 20px;
+    font-weight: 100;
+    background-color: transparent;
+    color: white;
+    margin-left: 25px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tech-stack-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.tech-stack-container div{
+    background-color: rgba(93, 93, 109, 0.479);
+    border-radius: 10px;
+    margin-left: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    color: whitesmoke;
+}
+
+.individual-project-container button{
+    margin-top: 60px;
+    margin-left: 30px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: rgb(8, 5, 0);
+    color: white;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.individual-project-container:hover{
+    background-color: rgba(138, 153, 153, 0.247);
+}
+
+.contact-heading{
+    color: white;
+    margin-top: 40px;
+    font-weight: 400;
+}
+
+.contact-container{
+    margin: auto;
+    display: flex;
+    background-color: transparent;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 450px;
+    
+    
+}
+
+.contact-container a i{
+    color: white;
+    font-size: 60px;
+    margin-top: 50px;    
+    margin-bottom: 100px;
+}
+
+.contact-container a i:hover{
+    color: aqua;
+    font-size: 70px;
+    transition-delay: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.7s;
+    transform: rotate(360deg);
+}
+
+.contact-container a i:not(:hover){
+    color: white;
+    font-size: 60px;
+    transition-delay: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.7s;
+     
+}
+
+#skills-heading{
+    color: white;
+    margin-top: 40px;
+    font-weight: 400;
+}
+
+.skills-container1{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-around;
+}
+
+.skills-container1 i{
+    color: white;
+    font-size: 70px;
+    padding: 50px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    background-color: rgba(138, 153, 153, 0.199);
+    border-radius: 25px;
+}
+
+.skills-container1 i:hover{
+    background-color: rgba(138, 153, 153, 0.247);
+    color: aqua;
+}
+
+.skills-container2{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-around;
+}
+
+.skills-container2 i{
+    color: white;
+    font-size: 70px;
+    padding: 50px;
+    margin-top: 40px;
+    margin-bottom: 150px;
+    background-color: rgba(138, 153, 153, 0.199);
+    border-radius: 25px;
+}
+
+.skills-container2 i:hover{
+    background-color: rgba(138, 153, 153, 0.247);
+    color: aqua;
+}
+
+.navbar-container{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    position: fixed;
+    margin-top: -150px;
+}
+
+.navbar-container h1{
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    padding-left: 20px;
+    padding-top: 25px;
+    width: 40%;
+}
+
+.navbar-elements{
+    float: right;
+}
+
+.navbar-elements a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    padding-right: 30px;
+    padding-bottom: 20px;
+}
+
+.navbar-container h1:hover{
+    color: aqua;
+    font-weight: 550;
+    width: 50%;
+    letter-spacing:  0.5em;
+    transition-delay: 0.5s;
+    transition-duration: 1.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.navbar-container h1:not(:hover){
+    color: white;
+    font-weight: 400;
+    letter-spacing:  0.1em;
+    transition-delay: 0.5s;
+    transition-duration: 1.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.navbar-container a:hover{
+    color: aqua;
+    font-weight: 700;
+    transition-delay: 0.2s;
+}
+
+
+
+
+
+

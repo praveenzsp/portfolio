@@ -12,12 +12,31 @@ html{
     scroll-behavior: smooth;
 }
 
+#whole video{
+    position: fixed;
+    left: -100px;
+    top: -200px;
+    object-fit: cover;
+    background-position: center;
+    z-index: -20;
+    pointer-events: none;
+    filter: brightness(30%);
+}
 
-body{
+/* body{
     background-image: url('ironman1.jpg');
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+} */
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
 }
 
 .wholecontainer{
@@ -40,9 +59,10 @@ body{
 }
 
 .container1{
-    /* display: inline;
-    float: right; */
+    display: flex;
+    flex-direction: row;
     background-color: transparent;
+    justify-content: space-around;
 }
 
 .about{
@@ -58,13 +78,11 @@ body{
 }
 
 .gif1 img{
+    display: none;
     opacity: 1.0;
-    position: absolute;
-    top: 100px;
-    right: 120px;
     width: 500px;
     height: 300px;
-    z-index: -10;
+    z-index: -1;
 }
 
 
@@ -206,14 +224,14 @@ body{
 
 .contact-container a i{
     color: white;
-    font-size: 60px;
+    font-size: 40px;
     margin-top: 50px;    
     margin-bottom: 100px;
 }
 
 .contact-container a i:hover{
     color: aqua;
-    font-size: 70px;
+    font-size: 50px;
     transition-delay: 0.5s;
     transition-timing-function: ease-in-out;
     transition-duration: 0.7s;
@@ -222,7 +240,7 @@ body{
 
 .contact-container a i:not(:hover){
     color: white;
-    font-size: 60px;
+    font-size: 40px;
     transition-delay: 0.5s;
     transition-timing-function: ease-in-out;
     transition-duration: 0.7s;
@@ -284,7 +302,7 @@ body{
 .navbar-container{
     width: 100%;
     height: 100px;
-    background-color: black;
+    background-color: #030708;
     position: fixed;
     margin-top: -150px;
 }
@@ -333,6 +351,127 @@ body{
     color: aqua;
     font-weight: 700;
     transition-delay: 0.2s;
+}
+
+
+@media screen and (max-width:600px) {
+    #whole video{
+        display: none;
+    }
+
+    body{
+        background-image: url('ironman1.jpg');
+        background-position: center;
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .wholecontainer{
+        margin-left: 10px;
+        margin-right: 10px;
+        margin-top: -50px;
+        background-color: transparent;
+    }
+    
+    .container1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .container2{
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .skills-container1, .skills-container2{
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        height: auto;
+        justify-content: space-around;
+        margin-left: 50px;
+    }
+    .skills-container1 i, .skills-container2 i{
+        color: white;
+        font-size: 50px;
+        padding: 20px;
+        padding-left: 20px;
+        width: 25%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: rgba(138, 153, 153, 0.199);
+        border-radius: 25px;
+    }
+    .individual-project-container{
+        background-color: rgba(138, 153, 153, 0.199);
+        width: 417px;
+        height: 340px;
+        border-radius: 15px;
+        margin-top: 50px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .navbar-elements{
+        display: none;
+    }
+    .navbar-container h1{
+        color: white;
+        background-color: transparent;
+        font-size: 24px;
+        font-weight: 400;
+        padding-left: 20px;
+        padding-top: 25px;
+        width: 80%;
+    }
+    .navbar-container h1:hover{
+        color: aqua;
+        font-weight: 550;
+        width: 100%;
+        letter-spacing:  0.4em;
+        transition-delay: 0.5s;
+        transition-duration: 1.2s;
+        transition-timing-function: ease-in-out;
+    }
+    .gif1 img{
+        opacity: 1.0;
+        /* position: absolute; */
+        top: 100px;
+        right: 120px;
+        width: 300px;
+        height: 200px;
+        z-index: 2978;
+        margin-top: 30px;
+        padding-left: 30px;
+    }
+    .about p{
+        font-size: 15px;
+        padding-bottom: 30px;
+        letter-spacing: 2px;
+        color: white;
+        background-color: transparent;
+        width: 100%;
+    }
+    #home, #skills-heading, #project-heading, .contact-heading{
+        font-size: 22px;
+    }
+    .contact-container a i{
+        color: white;
+        font-size: 100px;
+        margin-top: 20px;    
+        margin-bottom: 50px;
+        
+    }
+    .individual-project-container h1{
+        font-size: 22px;
+    }
+    .individual-project-container p{
+        font-size: 17px;
+        font-weight: 300;
+        padding-right: 10px;
+    } 
 }
 
 

@@ -353,6 +353,10 @@ body {
     transition-delay: 0.2s;
 }
 
+#HELLO{
+    font-size: 60px;
+}
+
 
 @media screen and (max-width:600px) {
     #whole video{
@@ -472,6 +476,9 @@ body {
         font-weight: 300;
         padding-right: 10px;
     } 
+    #HELLO{
+        font-size: 40px;
+    }
 }
 
 

@@ -413,7 +413,7 @@ body {
         flex-direction: column;
         justify-content: center;
     }
-    .skills-container1, .skills-container2{
+    .skills-container1, .skills-container2, .skills-container3{
         background-color: transparent;
         display: flex;
         flex-direction: row;
@@ -421,7 +421,7 @@ body {
         justify-content: space-around;
         margin-left: 50px;
     }
-    .skills-container1 i, .skills-container2 i{
+    .skills-container1 i, .skills-container2 i, .skills-container3 i{
         color: white;
         font-size: 50px;
         padding: 20px;

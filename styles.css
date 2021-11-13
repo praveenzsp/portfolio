@@ -289,12 +289,35 @@ body {
     font-size: 70px;
     padding: 50px;
     margin-top: 40px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
     background-color: rgba(138, 153, 153, 0.199);
     border-radius: 25px;
 }
 
 .skills-container2 i:hover{
+    background-color: rgba(138, 153, 153, 0.247);
+    color: aqua;
+}
+
+.skills-container3{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    justify-content: space-around;
+}
+
+.skills-container3 i{
+    color: white;
+    font-size: 70px;
+    padding: 50px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    background-color: rgba(138, 153, 153, 0.199);
+    border-radius: 25px;
+}
+
+.skills-container3 i:hover{
     background-color: rgba(138, 153, 153, 0.247);
     color: aqua;
 }

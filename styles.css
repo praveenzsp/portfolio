@@ -386,9 +386,9 @@ body {
 @media screen and (max-width:600px) {
     #whole video{
         position: fixed;
-        left: -100px;
-        top: -200px;
-        object-fit: cover;
+        /* left: -100px;
+        top: -200px; */
+        object-fit: contain;
         background-position: center;
         z-index: -20;
         pointer-events: none;

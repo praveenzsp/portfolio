@@ -385,16 +385,23 @@ body {
 
 @media screen and (max-width:600px) {
     #whole video{
-        display: none;
+        position: fixed;
+        left: -100px;
+        top: -200px;
+        object-fit: cover;
+        background-position: center;
+        z-index: -20;
+        pointer-events: none;
+        filter: brightness(30%);
     }
 
-    body{
+    /* body{
         background-image: url('ironman1.jpg');
         background-position: center;
         background-attachment: fixed;
         background-size: cover;
         background-repeat: no-repeat;
-    }
+    } */
 
     .wholecontainer{
         margin-left: 10px;

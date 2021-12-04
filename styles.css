@@ -388,7 +388,7 @@ body {
         position: fixed;
         /* left: -100px;
         top: -200px; */
-        object-fit: contain;
+        object-fit: cover;
         background-position: center;
         z-index: -20;
         pointer-events: none;
